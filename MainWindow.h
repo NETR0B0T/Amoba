@@ -1,7 +1,6 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 #include <vector>
-#include "graphics.hpp"
 
 class widget;
 

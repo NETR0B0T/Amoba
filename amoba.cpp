@@ -102,7 +102,7 @@ void amoba :: event(genv::event ev){
         int m_x =ev.pos_x;
         int m_y =ev.pos_y;
         if(gameover==1){
-        if(m_x > pos_x && m_x < pos_x+size_x && m_y > pos_y && m_y < pos_y+size_y && ev.button ==-btn_left){
+        if(m_x > pos_x && m_x < pos_x+size_x-10 && m_y > pos_y && m_y < pos_y+size_y-10 && ev.button ==-btn_left){
         if(m_x > pos_x+180 && m_y > pos_y+220 && m_x < pos_x+180+100 && m_y < pos_y+220+50){
             for(int y=0; y<seg;y++){for(int x=0; x<seg; x++){v[x][y]=0;}} //reset
             gameover=0;
@@ -111,7 +111,7 @@ void amoba :: event(genv::event ev){
             }
         }
         else if(gameover==2){
-        if(m_x > pos_x && m_x < pos_x+size_x && m_y > pos_y && m_y < pos_y+size_y && ev.button ==-btn_left){
+        if(m_x > pos_x && m_x < pos_x+size_x-10 && m_y > pos_y && m_y < pos_y+size_y-10 && ev.button ==-btn_left){
         if(m_x > pos_x+180 && m_y > pos_y+220 && m_x < pos_x+180+100 && m_y < pos_y+220+50){
             for(int y=0; y<seg;y++){for(int x=0; x<seg; x++){v[x][y]=0;}} //reset
             gameover=0;
@@ -120,7 +120,7 @@ void amoba :: event(genv::event ev){
             }
         }
         else if(gameover==0){
-         if(m_x > pos_x && m_x < pos_x+size_x && m_y > pos_y && m_y < pos_y+size_y && ev.button ==-btn_left){
+         if(m_x > pos_x && m_x < pos_x+size_x-10 && m_y > pos_y && m_y < pos_y+size_y-10 && ev.button ==-btn_left){
          int p_x = std::ceil((m_x-pos_x)/(size_x/seg));
          int p_y = std::ceil((m_y-pos_y)/(size_y/seg));
          if(v[p_x][p_y]==0){ //ha szurke a hatter

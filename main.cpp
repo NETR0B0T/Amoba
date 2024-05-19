@@ -1,4 +1,3 @@
-#include "graphics.hpp"
 #include <iostream>
 #include <vector>
 #include <cmath>
@@ -13,9 +12,11 @@ using namespace std;
 
 
 int main(){
-    MainWindow *window = new MainWindow(1000, 600);
+    MainWindow *window = new MainWindow(1300, 600);
     amoba* a=new amoba(550,550, 10,50, 15);
     window->hozzaad(a);
+    amoba* b=new amoba(550,550, 600,50, 30);
+    window->hozzaad(b);
     window->loop();
     delete window;
 

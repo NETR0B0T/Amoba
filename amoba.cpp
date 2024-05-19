@@ -28,8 +28,8 @@ void amoba::rajzol(){
     //ha kek nyer:
     if(gameover==1){
         if(turn==-1){
-            gout << move_to(pos_x+size_x/2,pos_y+size_y/2) << color(255,0,0) << text("PIROS nyert");
-        }else{gout << move_to(pos_x+size_x/2,pos_y+size_y/2) << color(0,0,255) << text("KEK nyert");}
+            gout << move_to(pos_x+size_x/3,pos_y+size_y/4) << color(255,0,0) << text("PIROS nyert");
+        }else{gout << move_to(pos_x+size_x/3,pos_y+size_y/4) << color(0,0,255) << text("KEK nyert");}
         gout << move_to(pos_x+180,pos_y+220) << color(90,90,90) << box(100,50) << color(0,0,0) << move_to(pos_x+190,pos_y+250) << text("restart");
     }
     if(gameover==2){

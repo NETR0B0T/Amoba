@@ -12,7 +12,7 @@
 #include "amoba.h"
 using namespace genv;
 using namespace std;
-const int XX=1000, YY=600;
+const int XX=600, YY=600;
 
 void loop(std::vector<widget*> & widgets){
     event ev;
@@ -39,7 +39,7 @@ void loop(std::vector<widget*> & widgets){
 int main(){
     gout.open(XX,YY);
     std::vector<widget*> widgets;
-        amoba* a=new amoba(550,550, 10,50, 15);
+        amoba* a=new amoba(400, 400, 10,50, 3);
         widgets.push_back(a);
         a->rajzol();
         loop(widgets);
